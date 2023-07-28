@@ -9,23 +9,24 @@ let startButton = document.querySelector("#start-button");
 let quizButtons = document.querySelector("#quiz");
 let timerVis = document.querySelector("#timer");
 let currentQuestion = -1;
-let score = 0;
+let score = document.getElementById("score");
+let scoreValue = 0; 
+score.textContent = scoreValue.toString().padStart(8, '0');
 let timerId = "";
+let timer = 91;
 quizButtons.style.visibility = "hidden";
 timerVis.style.visibility = "hidden";
+score.style.visibility = "hidden";
 
-let questions = [{ question: "test q 1", answers: ["test1", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 2", answers: ["test1", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 3", answers: ["test1", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 4", answers: ["test1", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 5", answers: ["test1", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 6", answers: ["test1", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 7", answers: ["test1", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 8", answers: ["test1", "test2", "test3", "test4"], correctAnswer: "test5" }
+let questions = [{ question: "test q 1", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5"},
+{ question: "test q 2", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
+{ question: "test q 3", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
+{ question: "test q 4", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
+{ question: "test q 5", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
+{ question: "test q 6", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
+{ question: "test q 7", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
+{ question: "test q 8", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" }
 ]
-
-
-let timer = 91;
 
 
 
@@ -39,6 +40,7 @@ startButton.addEventListener("click", function () {
     console.log(currentQuestion);
     startQuiz();
     timerVis.style.visibility = "visible";
+    score.style.visibility = "visible";
     timerId = setInterval(function(){
 
         timer -=1;
@@ -57,10 +59,13 @@ quizButtons.addEventListener("click", function (event) {
         console.log("value:" + event.target.innerText)
         console.log("correct answer: " + questions[currentQuestion].correctAnswer);
         compareAnswers();
+        
+        
 
         function compareAnswers() {
             if (event.target.innerText == questions[currentQuestion].correctAnswer) {
-                score +=500;
+                scoreValue += 500;
+                score.textContent = scoreValue.toString().padStart(8, '0');
             }
             else {
                 timer -= 5;
@@ -84,6 +89,9 @@ quizButtons.addEventListener("click", function (event) {
 
 })
 
+let number = 2;
+let result = number.toString().padStart(5, '0');
+console.log(result); // 00002
 
 
 function startQuiz() {
@@ -96,7 +104,6 @@ function endQuiz() {
     quizButtons.style.visibility = "hidden";
     
 }
-
 
 function renderQuestion() {
     questionRender.textContent = questions[currentQuestion].question;

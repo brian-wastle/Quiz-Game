@@ -18,11 +18,11 @@ quizButtons.style.visibility = "hidden";
 timerVis.style.visibility = "hidden";
 score.style.visibility = "hidden";
 
-let questions = [{ question: "test q 1", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5"},
-{ question: "test q 2", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 3", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 4", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 5", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
+let questions = [{ question: "In what year was Super Mario Bros. Released for the Nintendo Entertainment System?", answers: ["1985", "1987", "1990", "1992"], correctAnswer: "1985"},
+{ question: "Which game is often cited as the `worst of all time` and partially responsible for the video game crash of 1983?", answers: ["Pac-Man", "E.T. the Extra-Terrestrial", "Adventure", "Yar's Revenge"], correctAnswer: "E.T. the Extra-Terrestrial" },
+{ question: "Which is the highest selling video game console of all time?", answers: ["Nintendo Wii", "Playstation 2", "Nintendo Gameboy", "Xbox 360"], correctAnswer: "Playstation 2" },
+{ question: "In what year was Nintendo founded?", answers: ["1976", "1889", "1980", "1979"], correctAnswer: "1889" },
+{ question: "Which is the marketing term Sega chose to advertise the Genesis as the `superior machine` to its rival, the Super Nintendo?", answers: ["HyperDrive", "Mega RAM", "Turbo Graphics", "Blast Processing"], correctAnswer: "Blast Processing" },
 { question: "test q 6", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
 { question: "test q 7", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
 { question: "test q 8", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" }
@@ -33,6 +33,9 @@ let questions = [{ question: "test q 1", answers: ["test5", "test2", "test3", "t
 // clear timer
 // 
 
+//get high scores
+
+// localStorage.getItem(example) === code || 0
 
 
 startButton.addEventListener("click", function () {

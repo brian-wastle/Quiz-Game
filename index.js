@@ -20,12 +20,12 @@ score.style.visibility = "hidden";
 
 let questions = [{ question: "In what year was Super Mario Bros. Released for the Nintendo Entertainment System?", answers: ["1985", "1987", "1990", "1992"], correctAnswer: "1985"},
 { question: "Which game is often cited as the `worst of all time` and partially responsible for the video game crash of 1983?", answers: ["Pac-Man", "E.T. the Extra-Terrestrial", "Adventure", "Yar's Revenge"], correctAnswer: "E.T. the Extra-Terrestrial" },
-{ question: "Which is the highest selling video game console of all time?", answers: ["Nintendo Wii", "Playstation 2", "Nintendo Gameboy", "Xbox 360"], correctAnswer: "Playstation 2" },
+{ question: "Which is the highest selling video game console of all time?", answers: ["Nintendo Wii", "Sony Playstation 2", "Nintendo Gameboy", "Microsoft Xbox 360"], correctAnswer: "Sony Playstation 2" },
 { question: "In what year was Nintendo founded?", answers: ["1976", "1889", "1980", "1979"], correctAnswer: "1889" },
 { question: "Which is the marketing term Sega chose to advertise the Genesis as the `superior machine` to its rival, the Super Nintendo?", answers: ["HyperDrive", "Mega RAM", "Turbo Graphics", "Blast Processing"], correctAnswer: "Blast Processing" },
-{ question: "test q 6", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 7", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" },
-{ question: "test q 8", answers: ["test5", "test2", "test3", "test4"], correctAnswer: "test5" }
+{ question: "This person, assumed to be an secret unlockable character in Street Fighter II, does not actually appear until 2023's Street Fighter 6.", answers: ["Evil Ryu", "Noob Saibot", "Akuma", "Shen Long"], correctAnswer: "test5" },
+{ question: "This video game console released in North America on September 9, 1999, or 9/9/99", answers: ["ColecoVision", "Gameboy Advance", "Sega Dreamcast", "Microsoft Xbox"], correctAnswer: "Sega Dreamcast" },
+{ question: "Which character starred in the first cartoon based on a video game character?", answers: ["Lara Croft", "Samus Aran", "Princess Zelda", "Ms. Pac-Man"], correctAnswer: "Ms. Pac-Man" }
 ]
 
 
@@ -90,11 +90,8 @@ quizButtons.addEventListener("click", function (event) {
         }
     }
 
-})
+});
 
-let number = 2;
-let result = number.toString().padStart(5, '0');
-console.log(result); // 00002
 
 
 function startQuiz() {

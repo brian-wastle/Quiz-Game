@@ -11,25 +11,38 @@
 </head>
 
 <body>
+    <!-- main bg image -->
+    <div class="splash">
+        <img class="center-fit" src='./assets/images/arcadecabinet.webp'>
+    
 
-    <div id="start-menu">
-        <h1>Start Menu</h1>
-        <button id="start-button">Start</button>
-    </div>
-
-    <div id="quiz">
-        <h2 id="question"></h1>
-        <button id="answer1"></button>
-        <button id="answer2"></button>
-        <button id="answer3"></button>
-        <button id="answer4"></button>
-    </div>
-
-    <div class="score">
-        <h2 id="timer"></h2>
-        <h3 id="score"></h2>
-    </div>
         
+
+        <div id="start-menu">
+            <h1 class="quiz-top">Retro Game Trivia</h1>
+            <button class="quiz-top" id="start-button">Start</button>
+        </div>
+
+        <div id="quiz">
+            <h2 class="quiz-top" id="question"></h2>
+            <div class="answerdiv">
+                <button class="ans-button" id="answer1"></button>
+                <button class="ans-button" id="answer2"></button>
+                <button class="ans-button" id="answer3"></button>
+                <button class="ans-button" id="answer4"></button>
+            </div>
+        </div>
+
+        <div class="score">
+            <h3 id="timer">90</h2>
+            <h3 class="quiz-top" id="score"></h2>
+        </div>
+    </div>    
     <script src="./index.js"></script>
+    
+    <footer>
+        2023. Designed & developed by Brian Wastle.
+    </footer>
+
 </body>
 </html>

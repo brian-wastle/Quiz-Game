@@ -13,7 +13,7 @@ let score = document.getElementById("score");
 let scoreValue = 0; 
 score.textContent = scoreValue.toString().padStart(8, '0');
 let timerId = "";
-let timer = 91;
+let timer = 90;
 quizButtons.style.visibility = "hidden";
 timerVis.style.visibility = "hidden";
 score.style.visibility = "hidden";
@@ -44,11 +44,11 @@ startButton.addEventListener("click", function () {
     startQuiz();
     timerVis.style.visibility = "visible";
     score.style.visibility = "visible";
-    timerId = setInterval(function(){
+    // timerId = setInterval(function(){
 
-        timer -=1;
-        timerRender.textContent = timer;
-        }, 1000);
+    //     timer -=1;
+    //     timerRender.textContent = timer;
+    //     }, 1000);
     renderQuestion();
     
 });

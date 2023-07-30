@@ -1,3 +1,99 @@
 * {
     font-family: 'Press Start 2P', cursive;
+    margin:0px;
+    padding:0px;
 }
+
+body {
+    background:black;
+    color:white;
+}
+
+.splash {
+    background-image:url("./assets/images/arcadecabinet.webp");
+    background-size: cover;
+    background-position: center;
+    object-fit: fill;
+} 
+
+.center-fit {
+    position:relative;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -3;
+}
+
+.quiz-top{
+    position:absolute;
+    z-index: 3;
+    left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+h1 { /* start menu */
+    font-size:2vi;
+    top:25vi;
+}
+
+#start-button {
+    top:30vi;
+    transform: translate(-50%, -50%);
+    padding:15px;
+    font-size: 1.5vw;
+    color:white;
+    border:none;
+    background-color: transparent;
+}
+
+#start-button:hover {
+    cursor: pointer;
+}
+
+h2 { /* question h2*/
+    font-size:1.4vi;
+    top:39vi;
+}
+
+.answerdiv { /* grid container that holds the answer buttons*/
+    position:absolute;
+    display:grid;
+    width: 23vi;
+    height: 16vi;
+    grid-template-rows: 1fr 1fr 1fr 1fr fit-content(20%);
+    top:25vi;
+    transform: translate(-50%, -50%);
+    left:50%;
+
+    
+}
+
+.ans-button { /*individual answer buttons*/
+    justify-content: center;
+    cursor: pointer;
+    /* margin:1.4vi; */
+    font-size:1vi;
+    background-color: transparent;
+    border: none;
+    color:white;
+}
+
+#timer {
+    position:absolute;
+    font-size: 1.5vw;
+    top:15vi;
+    right:14vi;
+}
+
+#score {
+    position:absolute;
+    font-size: 1.5vw;
+    top:16vi;
+    left:20vi;
+}
+
+footer {
+    margin-top:300px;
+    text-align:center;
+    margin-bottom:5vh;
+} 

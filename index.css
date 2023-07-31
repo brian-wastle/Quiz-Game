@@ -9,12 +9,6 @@ body {
     color:white;
 }
 
-.splash {
-    background-image:url("./assets/images/arcadecabinet.webp");
-    background-size: cover;
-    background-position: center;
-    object-fit: fill;
-} 
 
 .center-fit {
     position:relative;
@@ -32,9 +26,12 @@ body {
 
 
 h1 { /* start menu */
-    font-size:2vi;
+    font-size:3vi;
+    width:100%;
     top:25vi;
+    text-align: center;
     animation: color-change 4s infinite;
+    -webkit-text-stroke: 0.02em black;
 }
 
 @keyframes color-change {
@@ -63,6 +60,8 @@ h1 { /* start menu */
 }
 
 h2 { /* question h2*/
+    width:69%;
+    line-height:1.3em;
     font-size:1.4vi;
     top:39vi;
 }
@@ -88,6 +87,10 @@ h2 { /* question h2*/
     background-color: transparent;
     border: none;
     color:white;
+}
+
+.ans-button:hover {
+    cursor: pointer;
 }
 
 #timer {

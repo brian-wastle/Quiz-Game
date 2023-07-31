@@ -86,7 +86,6 @@ function endQuiz() {
     playerStats["score"] = scoreValue;
     playerStats["time"] = timer;
     clearInterval(timerId);
-    localStorage.clear();
     localStorage.setItem("playerStats", JSON.stringify(playerStats));
 
     window.location.href = "./highscores.html";

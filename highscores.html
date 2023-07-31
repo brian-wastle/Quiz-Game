@@ -12,10 +12,18 @@
 
 <body>
     <img class="center-fit" src='./assets/images/highscores.webp'>
+    <div id="player-input">
+    <label for="initials-input">Initials</label>
+    <input type="text" name="Initials" id="initials-input" maxlength="3" />
+    <button id="submit-button">Submit</button>
+    </div>
 
-    <h1>HIGH SCORES</h1>
-    <ul></ul>
-
+    <div id="high-score-table">
+        <h1>HIGH SCORES</h1>
+        <ul id="initials-list"></ul>
+        <ul id="score-list"></ul>
+        <ul id="time-list"></ul>
+    </div>
 
 
 

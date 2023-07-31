@@ -11,26 +11,36 @@
     </head>
 
 <body>
-    <img class="center-fit" src='./assets/images/highscores.webp'>
+    <img class="bg-image" src='./assets/images/highscores.webp'>
     
-    <div id="player-input">
-        <h1>ENTER YOUR INITIALS</h1>
-        <form>
-            <input type="text" name="Initials" id="initials-input" maxlength="3" required>
-        </form>
-        <button id="submit-button">Submit</button>
+
+
+
+    <div class="top-container" id="player-input">
+        <h1 class="top-container" id="initials-title">ENTER YOUR INITIALS</h1>
+        <div id="submitScore">
+            <input type="text" class="top-container" name="Initials" id="initials-input" maxlength="3" required>
+            <button class="top-container" id="submit-button">Submit</button>
+        </div>
     </div>
 
-    <div id="high-score-table">
-        <h1>HIGH SCORES</h1>
-        <ul id="initials-list"></ul>
-        <ul id="score-list"></ul>
-        <ul id="time-list"></ul>
+
+
+
+    <div class="bottom-container" id="high-score-table">
+        <h1 class="bottom-container" id="scores-title">HIGH SCORES</h1>
+        <ul class="score-list" id="initials-list"></ul>
+        <ul class="score-list" id="score-list"></ul>
+        <ul class="score-list" id="time-list"></ul>
     </div>
 
 
 
 
     <script src="./highscores.js"></script>
+
+    <footer>
+        2023. Designed & developed by Brian Wastle.
+    </footer>
 </body>
 </html>

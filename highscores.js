@@ -3,8 +3,8 @@ let ulScore = document.getElementById("score-list");
 let ulTime = document.getElementById("time-list");
 let submitButton = document.querySelector("#submit-button");
 let initialsInput = document.querySelector("#initials-input");
-let highScoresTable = document.querySelector("#high-scores-table");
-let playerInput = document.querySelector("#playerInput");
+let highScoresTable = document.getElementById("high-score-table");
+let playerInput = document.getElementById("player-input");
 playerInput.style.visibility = "visible";
 highScoresTable.style.visibility = "hidden";
 
@@ -20,12 +20,16 @@ let tempArray2 = JSON.parse(localStorage.getItem("playerStats"));
 //push both to the existing array of scores
 
 submitButton.addEventListener("click", function(event) {
-    if (initialsInput.value === '') {
-        initialsInput.value === 'LPS'
+    event.preventDefault();
+    if (initialsInput.value == '') {
+        tempArray.push({initials: 'HAL', score: tempArray2.score, time: tempArray2.time});
+    }
+    else {
+        tempArray.push({initials: initialsInput.value, score: tempArray2.score, time: tempArray2.time});
     }
     
 
-    tempArray.push({initials: initialsInput.value, score: tempArray2.score, time: tempArray2.time});
+    // tempArray.push({initials: initialsInput.value, score: tempArray2.score, time: tempArray2.time});
     
     // order the array based on score
     tempArray.sort((a, b) => b.score - a.score);

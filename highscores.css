@@ -17,18 +17,14 @@ body {
     z-index: -3;
 }
 
-#player-input {
-    position:static;
-}
-
 .top-container{
+    position:relative;
     z-index: 3;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 h1 {
-    
     text-align: center;
     font-size:3vi;
     color:red;
@@ -37,13 +33,11 @@ h1 {
 }
 
 #initials-title {
-    position:relative;
     width:75vi;
     bottom:26vi;
 }
 
 #initials-input {
-    position:relative;
     width:12vi;
     height:3vi;
     bottom:23vi;
@@ -59,7 +53,7 @@ h1 {
 }
 
 #submit-button {
-    position:relative;
+
     bottom:23.5vi;
     left:42.5vi;
     height:3vi;
@@ -70,40 +64,76 @@ h1 {
 
 .bottom-container{
     position:absolute;
+    width:40vi;
     z-index: 3;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#high-score-table {
-    position:static;
-    z-index: 3;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 #scores-title {
     position:relative;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width:45vi;
-    top:100px;
+    top: -8vi;
+    animation: text-blink 1s linear infinite;
+
+
+}
+  
+@keyframes text-blink {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.score-list {
+    text-shadow: white 0 0 .25em;
 }
 
 #initials-list {
     position:relative;
-    top:0vi;
+    font-size: 2vi;
+    top:-45vi;
     width:45vi;
 }
 
 #score-list {
     position:relative;
-    top:0vi;
+    font-size: 2vi;
+    top:39.5vi;
+    left:19vi;
     width:45vi;
+    list-style:none;
 }
 
 #time-list {
     position:relative;
-    top:0vi;
+    font-size: 2vi;
+    top:19.5vi;
+    left:40vi;
     width:45vi;
+    list-style:none;
 }
 
 

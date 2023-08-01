@@ -22,6 +22,7 @@ body {
     z-index: 3;
     left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 
@@ -51,6 +52,7 @@ h1 { /* start menu */
     padding:15px;
     font-size: 1.5vw;
     color:white;
+    text-shadow: rgb(255, 255, 255) 0 0 .15em;
     border:none;
     background-color: transparent;
 }
@@ -64,6 +66,7 @@ h2 { /* question h2*/
     line-height:1.3em;
     font-size:1.4vi;
     top:39vi;
+    text-shadow: rgb(255, 255, 255) 0 0 .1em;
 }
 
 .answerdiv { /* grid container that holds the answer buttons*/
@@ -87,6 +90,7 @@ h2 { /* question h2*/
     background-color: transparent;
     border: none;
     color:white;
+    text-shadow: rgb(255, 255, 255) 0 0 .15em;
 }
 
 .ans-button:hover {
@@ -98,6 +102,7 @@ h2 { /* question h2*/
     font-size: 1.5vw;
     top:15vi;
     right:14vi;
+    text-shadow: rgb(255, 255, 255) 0 0 .15em;
 }
 
 #score {
@@ -105,6 +110,7 @@ h2 { /* question h2*/
     font-size: 1.5vw;
     top:16vi;
     left:20vi;
+    text-shadow: rgb(255, 255, 255) 0 0 .15em;
 }
 
 footer {

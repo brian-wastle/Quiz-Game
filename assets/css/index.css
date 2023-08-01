@@ -61,6 +61,18 @@ h1 { /* start menu */
     cursor: pointer;
 }
 
+#start-menu p {
+    position:relative;
+    bottom:20vi;
+    width:50vi;
+    margin-left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:white;
+    text-shadow: rgb(255, 255, 255) 0 0 .15em;
+}
+
+
 h2 { /* question h2*/
     width:69%;
     line-height:1.3em;
@@ -86,7 +98,7 @@ h2 { /* question h2*/
     justify-content: center;
     cursor: pointer;
     /* margin:1.4vi; */
-    font-size:1vi;
+    font-size:1.5vi;
     background-color: transparent;
     border: none;
     color:white;

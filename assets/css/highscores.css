@@ -78,10 +78,8 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     width:45vi;
-    top: -8vi;
+    top: -28vi;
     animation: text-blink 1s linear infinite;
-
-
 }
   
 @keyframes text-blink {
@@ -106,32 +104,31 @@ h1 {
 }
 
 
-
-.score-list {
+.score-li {
     text-shadow: white 0 0 .25em;
 }
 
-#initials-list {
+#container {
+    display:flex;
     position:relative;
+    flex-direction: row;
+    top:-25vi;
+    left:6vi;
+}
+
+#initials-list {
     font-size: 2vi;
-    top:-45vi;
     width:45vi;
 }
 
 #score-list {
-    position:relative;
     font-size: 2vi;
-    top:39.5vi;
-    left:19vi;
     width:45vi;
     list-style:none;
 }
 
 #time-list {
-    position:relative;
     font-size: 2vi;
-    top:19.5vi;
-    left:40vi;
     width:45vi;
     list-style:none;
 }

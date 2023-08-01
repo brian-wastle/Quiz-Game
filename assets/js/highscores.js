@@ -1,4 +1,4 @@
-let ulInitials = document.getElementById("initials-list");
+let olInitials = document.getElementById("initials-list");
 let ulScore = document.getElementById("score-list");
 let ulTime = document.getElementById("time-list");
 let submitButton = document.querySelector("#submit-button");
@@ -89,7 +89,7 @@ function displayScores() {
         let li = document.createElement("li");
         li.textContent = tempArray[i].initials;
         li.setAttribute("data-index", i);
-        ulInitials.appendChild(li);
+        olInitials.appendChild(li);
     };
     
     for (let i = 0; i < tempArray.length; i++) {

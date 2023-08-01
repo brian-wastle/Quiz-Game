@@ -16,15 +16,15 @@ let tempArray = JSON.parse(localStorage.getItem("storedStats")) || [];
 if (tempArray.length == 0) {
 tempArray = [
     {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
-    {initials: 'HAL', score: 0, time: 85},
+    {initials: 'PAC', score: 0, time: 85},
+    {initials: 'MAN', score: 0, time: 85},
+    {initials: 'LPS', score: 0, time: 85},
+    {initials: 'LIL', score: 0, time: 85},
+    {initials: 'MAC', score: 0, time: 85},
+    {initials: 'SJR', score: 0, time: 85},
+    {initials: 'SLA', score: 0, time: 85},
+    {initials: 'YER', score: 0, time: 85},
+    {initials: 'BMW', score: 0, time: 85},
 ]
 
 }

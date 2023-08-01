@@ -24,7 +24,7 @@ let questions = [{ question: "In what year was Super Mario Bros. released for th
 { question: "Which is the highest selling video game console of all time?", answers: ["Nintendo Wii", "Microsoft Xbox 360", "Nintendo Gameboy", "Sony Playstation 2"], correctAnswer: "Sony Playstation 2" },
 { question: "In what year was Nintendo founded?", answers: ["1976", "1889", "1980", "1979"], correctAnswer: "1889" },
 { question: "Which is the marketing term Sega chose to advertise the Genesis as the `superior machine` to its rival, the Super Nintendo?", answers: ["HyperDrive", "Mega RAM", "Blast Processing", "Turbo Graphics"], correctAnswer: "Blast Processing" },
-{ question: "This person, assumed to be an secret unlockable character in Street Fighter II, does not actually appear until 2023's Street Fighter 6.", answers: ["Evil Ryu", "Noob Saibot", "Akuma", "Shen Long"], correctAnswer: "ShenLong" },
+{ question: "This person, assumed to be an secret unlockable character in Street Fighter II, does not actually appear until 2023's Street Fighter 6.", answers: ["Evil Ryu", "Noob Saibot", "Akuma", "Shen Long"], correctAnswer: "Shen Long" },
 { question: "This video game console released in North America on September 9, 1999, or 9/9/99.", answers: ["Sega Dreamcast", "Gameboy Advance", "ColecoVision", "Microsoft Xbox"], correctAnswer: "Sega Dreamcast" },
 { question: "Which character starred in the first cartoon based on a video game character?", answers: ["Lara Croft", "Samus Aran", "Princess Zelda", "Ms. Pac-Man"], correctAnswer: "Ms. Pac-Man" }
 ]

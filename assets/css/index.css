@@ -65,9 +65,11 @@ h1 { /* start menu */
     position:relative;
     bottom:20vi;
     width:50vi;
+    line-height:1.3em; 
     margin-left:50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 1.25vw;
     color:white;
     text-shadow: rgb(255, 255, 255) 0 0 .15em;
 }

@@ -40,7 +40,14 @@ startButton.addEventListener("click", function () {
     timerId = setInterval(function(){
 
         timer -=1;
+        if (timer <= 0) {
+            timer = 0;
+        }
         timerRender.textContent = timer;
+        if (timer <= 0) {
+            timer = 0;
+            endQuiz();
+        }
         }, 1000);
     renderQuestion();
     
@@ -69,6 +76,9 @@ quizButtons.addEventListener("click", function (event) {
                 }
                 else {
                     timer -= 5;
+                    if (timer <= 0) {
+                        timer = 0;
+                    }
                 }
             }
 

@@ -5,8 +5,10 @@ let submitButton = document.querySelector("#submit-button");
 let initialsInput = document.querySelector("#initials-input");
 let highScoresTable = document.getElementById("high-score-table");
 let playerInput = document.getElementById("player-input");
+let restartButton = document.querySelector("#restart");
 playerInput.style.visibility = "visible";
 highScoresTable.style.visibility = "hidden";
+
 
 
 //get the existing scores and add them to an array
@@ -47,8 +49,6 @@ submitButton.addEventListener("click", function(event) {
         tempArray.push({initials: initialsInput.value, score: tempArray2.score, time: finalTime});
     }
     
-
-    // tempArray.push({initials: initialsInput.value, score: tempArray2.score, time: tempArray2.time});
     
     // order the array based on score
     tempArray.sort((a, b) => b.score - a.score);
@@ -78,7 +78,10 @@ submitButton.addEventListener("click", function(event) {
   });
 
 
-
+  restartButton.addEventListener("click", function(event) {
+    event.preventDefault(); 
+    window.location.href = "index.html" ;
+    });
 
 //display the new array
 function displayScores() {

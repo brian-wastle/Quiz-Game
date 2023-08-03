@@ -112,7 +112,7 @@ h1 {
     display:flex;
     position:relative;
     flex-direction: row;
-    top:-25vi;
+    top:-26vi;
     left:6vi;
 }
 
@@ -133,7 +133,16 @@ h1 {
     list-style:none;
 }
 
-
+#restart {
+    position:relative;
+    font-size: 2vi;
+    width:20vi;
+    background:white;
+    color:black;
+    top:-24.5vi;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 footer {
     margin-top:300px;
